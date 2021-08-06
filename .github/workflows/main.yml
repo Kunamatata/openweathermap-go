@@ -17,7 +17,7 @@ jobs:
       - name: Install goveralls and go coverage
         run: |
           go install github.com/mattn/goveralls@latest
-          go install golang.org/x/tools/cmd/cover
+          go get golang.org/x/tools/cmd/cover
       - name: Run Unit tests
         run: |
           go test -v -covermode=count -coverprofile=coverage.out
