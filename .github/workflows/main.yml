@@ -16,7 +16,7 @@ jobs:
           go mod download
       - name: Install goveralls
         run: |
-          go get github.com/mattn/goveralls@latest
+          go install github.com/mattn/goveralls@latest
           go get golang.org/x/tools/cmd/cover
       - name: Run Unit tests
         run: |
