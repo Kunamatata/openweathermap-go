@@ -1,10 +1,9 @@
-package openweathermapgo_test
+package openweathermapgo
 
 import (
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
-	. "openweathermap-go"
 	"os"
 	"testing"
 	"time"
